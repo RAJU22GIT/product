@@ -1,0 +1,12 @@
+<mvc:View controllerName="project3.controller.Desc"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>title}">
+     <List id ="did"
+      headerText="Desc List"
+            items="{/Description}">
+             <StandardListItem
+                title="{ProductDescription}"/>
+        </List>
+    </Page>
+</mvc:View>

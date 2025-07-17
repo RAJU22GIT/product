@@ -1,0 +1,115 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "assesment",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.2",
+      "toolsId": "840b3257-db16-458e-ab8b-8d5d9e2739e2"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.138.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "assesment.i18n.i18n"
+        }
+      },
+      "material":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/material.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "assesment.view",
+        "async": true,
+        "viewPath": "assesment.view"
+      },
+      "routes": [
+        {
+          "name": "RouteProduct",
+          "pattern": ":?query:",
+          "target": [
+            "TargetProduct"
+          ]
+        },
+        {
+          "name": "RouteList",
+          "pattern": "list/{indexlist}",
+          "target": [
+            "TargetList"
+          ]
+        }
+        
+      ],
+      "targets": {
+        "TargetProduct": {
+          "id": "Product",
+          "name": "Product"
+        },
+        "TargetList": {
+          "id": "Lidi",
+          "name": "list"
+        }
+
+      }
+    },
+    "rootView": {
+      "viewName": "assesment.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

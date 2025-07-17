@@ -1,0 +1,53 @@
+<mvc:View controllerName="project3.controller.Prdview"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+     <Table id ="Prdid"  items="{products>/Prouducts}">
+     <headerToolbar>
+     <Toolbar >
+     <content>
+     <Title text="Product Search" ></Title>
+     <ToolbarSpacer ></ToolbarSpacer>
+     <SearchField width="20%" liveChange="change"></SearchField>
+     <Button icon="sap-icon://sort" press="onSortPress"/>
+      <Button icon="sap-icon://add" press="onAddProductPress"/>
+     </content>
+     </Toolbar>
+     </headerToolbar>
+     <columns>
+    <Column width="10rem">
+        <Text text="Product Id"/>
+     </Column>
+     <Column>
+        <Text text="Product Name"/>
+     </Column>
+     <Column>
+        <Text text="Product Description"/>
+     </Column>
+     <Column>
+        <Text text="Location"/>
+     </Column>
+     <Column>
+        <Text text="Cost Center"/>
+     </Column>
+     <Column>
+        <Text text="Status"/>
+     </Column>
+    </columns>
+    <items>
+        <ColumnListItem type="Active" press="onRowPress">
+        <cells>
+        <Text text="{products>ProductId}"/>
+        <Text text="{products>ProductName}"/>
+        <Text text="{products>ProductDescription}"/>
+        <Text text="{products>Location}"/>
+        <Text text="{products>CostCenter}"/>
+        <ObjectStatus text="{products>Status}" state="{=${products>Status} === 'Active' ? 'Success' : 'Error'}"/>
+        </cells>
+        </ColumnListItem>
+    </items>
+    </Table>
+    <Button text="Navigate to List" press="onNavPress"></Button>
+    <Button text="Navigate to Desc" press="onNavDesc"></Button>
+    </Page>
+</mvc:View>

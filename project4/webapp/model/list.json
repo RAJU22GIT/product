@@ -1,0 +1,32 @@
+{
+    "Products": [
+        {
+            "ProductName": "Laptop",
+            "ProductDescription": "High-end laptop",
+            "ProductUrl":"sap-icon://laptop"
+        },
+        {
+            "ProductName": "Mouse",
+            "ProductDescription": "Wireless mouse",
+           "ProductUrl":"sap-icon://cursor-arrow"
+        },
+        {
+           
+            "ProductName": "Bag",
+            "ProductDescription": "Laptop Bag",
+            "ProductUrl":"sap-icon://accessibility"
+        },
+        {
+          
+            "ProductName": "Keyboard",
+            "ProductDescription": "Wireless keyboard",
+            "ProductUrl":"sap-icon://keyboard-and-mouse"
+        },
+        {
+           
+            "ProductName": "Headset",
+            "ProductDescription": "Wireless headset",
+            "ProductUrl":"sap-icon://call"
+        }
+    ]
+}

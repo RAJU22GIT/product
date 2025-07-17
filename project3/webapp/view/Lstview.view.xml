@@ -1,0 +1,23 @@
+<mvc:View controllerName="project3.controller.Lstview"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page1" title="{i18n>title}">
+     <List id ="lid"
+      headerText="Product List"
+            items="{productsList>/Products}">
+            <headerToolbar>
+            <Toolbar >
+            <content>
+<Title text="List search"></Title>
+<ToolbarSpacer ></ToolbarSpacer>
+<SearchField width="25%" change="onchange"></SearchField>
+            </content>  
+            </Toolbar>
+            </headerToolbar>          
+            <StandardListItem
+                title="{productsList>ProductName}" 
+                description="{productsList>ProductDescription}"/>
+        </List>
+        <Button text="Nav to Table" press="onNavTable"></Button>
+    </Page>
+</mvc:View>

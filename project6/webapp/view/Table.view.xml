@@ -1,0 +1,55 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="project6.controller.Table"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="PG" title="{i18n>title}">
+    <Table headerText="Table View" id="TID" items="{MATERIALS>/materials}" >
+    <headerToolbar>
+    <Toolbar >
+    <content>
+<Title text="TABLE SEARCH"></Title>
+<ToolbarSpacer ></ToolbarSpacer>
+<Button icon="sap-icon://sort" press="onsort"></Button>
+<SearchField width="20rem" change="onfilter"></SearchField>
+    </content>
+    </Toolbar>
+    </headerToolbar>
+    <columns>
+    <Column >
+    <Text text="Material ID"></Text>
+    </Column>
+     <Column >
+    <Text text="Material Name"></Text>
+    </Column>
+     <Column >
+    <Text text="Material Type"></Text>
+    </Column>
+     <Column >
+    <Text text="Unit Of Measure"></Text>
+    </Column>
+     <Column >
+    <Text text="Current stock"></Text>
+    </Column>
+    </columns>
+    <items>
+    <ColumnListItem type="Navigation" press="navigate">
+    <cells>
+    <Text text="{MATERIALS>material_id}" />
+    <Text text="{MATERIALS>material_name}" />
+    <Text text="{MATERIALS>material_type}" />
+    <Text text="{MATERIALS>unit_of_measure}" />
+    <!-- <Text text="{current_stock}" /> -->
+    <ObjectStatus text="{MATERIALS>current_stock}" state="{=${MATERIALS>current_stock} >= 500 ? 'Success' : 'Error'}" />
+    </cells>
+    </ColumnListItem>
+    </items>
+    </Table>
+    <List headerText="List View"  id="LID" items="{MATERIALS>/vendors}">
+    <items>
+    <StandardListItem  
+    title="{MATERIALS>vendor_id}"
+    description="{MATERIALS>vendor_name}"
+    />
+    </items>
+    </List>
+    </Page>
+</mvc:View>

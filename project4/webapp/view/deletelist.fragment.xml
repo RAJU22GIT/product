@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog 
+        id="deleteDialog" 
+        title="Confirm Delete"
+        type="Message"
+        class="sapUiContentPadding">
+        
+        <Text text="Are you sure you want to delete?" />
+
+        <beginButton>
+            <Button 
+                text="Delete" 
+                type="Emphasized" 
+                press="onDeleteConfirm"/>
+        </beginButton>
+
+        <endButton>
+            <Button 
+                text="Cancel" 
+                press="onDeleteCancel"/>
+        </endButton>
+
+    </Dialog>
+</core:FragmentDefinition>

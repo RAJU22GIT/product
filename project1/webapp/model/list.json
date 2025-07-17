@@ -1,0 +1,39 @@
+{
+    "Products": [
+        {
+            "ProductId": "P001",
+            "ProductName": "Laptop",
+            "ProductDescription": "High-end laptop",
+            "Location": "Warehouse A",
+            "CostCenter": "CC1001"
+        },
+        {
+            "ProductId": "P002",
+            "ProductName": "Mouse",
+            "ProductDescription": "Wireless mouse",
+            "Location": "Warehouse B",
+            "CostCenter": "CC1002"
+        },
+        {
+            "ProductId": "P003",
+            "ProductName": "Bag",
+            "ProductDescription": "Laptop Bag",
+            "Location": "Warehouse B",
+            "CostCenter": "CC1002"
+        },
+        {
+            "ProductId": "P004",
+            "ProductName": "Keyboard",
+            "ProductDescription": "Wireless keyboard",
+            "Location": "Warehouse B",
+            "CostCenter": "CC1002"
+        },
+        {
+            "ProductId": "P005",
+            "ProductName": "Headset",
+            "ProductDescription": "Wireless headset",
+            "Location": "Warehouse B",
+            "CostCenter": "CC1002"
+        }
+    ]
+}

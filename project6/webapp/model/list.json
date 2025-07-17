@@ -1,0 +1,53 @@
+{
+    "vendorslist": [
+      {
+        "vendor_id": "VEN001",
+        "vendor_name": "Apex Metals Pvt Ltd",
+        "contact_person": "Rahul Sharma",
+        "contact_number": "+919876543210",
+        "email": "sales@apexmetals.com",
+        "address": "123 Industrial Area, Phase 1, Bangalore, India"
+      },
+      {
+        "vendor_id": "VEN002",
+        "vendor_name": "Global Steel Suppliers",
+        "contact_person": "Priya Singh",
+        "contact_number": "+918765432109",
+        "email": "info@globalsteel.in",
+        "address": "456 Main Road, Delhi, India"
+      },
+      {
+        "vendor_id": "VEN003",
+        "vendor_name": "Polymer Solutions India",
+        "contact_person": "Amit Kumar",
+        "contact_number": "+917654321098",
+        "email": "sales@polymersolutions.co.in",
+        "address": "789 Chemical Zone, Mumbai, India"
+      },
+      {
+        "vendor_id": "VEN004",
+        "vendor_name": "Electrical Supplies Co.",
+        "contact_person": "Sunita Devi",
+        "contact_number": "+919988776655",
+        "email": "orders@electricalsupplies.in",
+        "address": "101 Electronics City, Chennai, India"
+      },
+      {
+        "vendor_id": "VEN005",
+        "vendor_name": "Precision Rubbers",
+        "contact_person": "Gopal Reddy",
+        "contact_number": "+918123456789",
+        "email": "info@precisionrubbers.com",
+        "address": "202 Industrial Estate, Pune, India"
+      },
+      {
+        "vendor_id": "VEN006",
+        "vendor_name": "Fasteners India",
+        "contact_person": "Suresh Rao",
+        "contact_number": "+919012345678",
+        "email": "sales@fastenersindia.net",
+        "address": "303 Hardware Market, Kolkata, India"
+      }
+    ]
+  }
+   

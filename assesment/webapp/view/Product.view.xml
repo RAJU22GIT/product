@@ -1,0 +1,64 @@
+<mvc:View controllerName="assesment.controller.Product"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Table id ="id" items="{material>/}">
+    <headerToolbar>
+    <Toolbar >
+    <content>
+<Title text="TABLE SEARCH"></Title>
+<ToolbarSpacer ></ToolbarSpacer>
+<Button icon="sap-icon://sort" press="onsort"></Button>
+<SearchField width="20rem" change="onfilter"></SearchField>
+    </content>
+    </Toolbar>
+    </headerToolbar>
+    <columns>
+    <Column width="10rem">
+        <Text text="Material Id"/>
+     </Column>
+     <Column>
+        <Text text="Material Name"/>
+     </Column>
+     <Column>
+        <Text text="Material Type"/>
+     </Column>
+     <Column>
+        <Text text="Unit of measure"/>
+     </Column>
+     <Column>
+        <Text text="Current stock"/>
+     </Column>
+    </columns>
+<items>
+        <ColumnListItem  type="Navigation" press="OnNavi">
+        <cells>
+        <Text text="{material>materialId}"/>
+        <Text text="{material>materialName}"/>
+        <Text text="{material>description}"/>
+        <Text text="{material>unitOfMeasure}"/>
+        <ObjectStatus text="{material>currentStock}" state="{=${material>currentStock} >= 70 ? 'Success' : 'Error'}"/>
+        <!-- <Text text="{current_stock}"/> -->
+        </cells>
+        </ColumnListItem>
+    </items>
+    </Table>
+    <!-- <List headerText="List View"  id="LID" items="{material>/}">
+    <headerToolbar>
+    <Toolbar >
+    <content>
+<Title text="List SEARCH"></Title>
+<ToolbarSpacer ></ToolbarSpacer>
+<SearchField width="20rem" liveChange="ONfilter"></SearchField>
+    </content>
+    </Toolbar>
+    </headerToolbar>
+    <items>
+    <StandardListItem  
+    title="{material>vendorId}"
+    description="{material>vendorName}"
+    />
+    </items>
+    </List> -->
+    </Page>
+</mvc:View>

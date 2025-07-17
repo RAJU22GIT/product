@@ -1,0 +1,14 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="project6.controller.list"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="PG1" title="{i18n>title}">
+     <List headerText="List View"  id="LID1" items="{VendorValue>/vendors}">
+    <items>
+    <StandardListItem  
+    title="{VendorValue>vendor_id}"
+    description="{VendorValue>vendor_name}" 
+    icon="sap-icon://employee" />
+    </items>
+    </List>
+        </Page>
+</mvc:View>

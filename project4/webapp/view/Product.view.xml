@@ -1,0 +1,60 @@
+<mvc:View controllerName="project4.controller.Product"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Table id ="Prdid"  items="{/Prouducts}" mode="SingleSelectLeft">
+     <headerToolbar>
+     <Toolbar >
+     <content>
+     <Title text="Product Search" ></Title>
+     <ToolbarSpacer ></ToolbarSpacer>
+     <Button icon="sap-icon://sort-ascending" press="onAscPress"/>
+     <Button icon="sap-icon://sort-descending" press="onDscPress"/>
+     <Button icon="sap-icon://sort" press="onSortPress"/>
+     <Button icon="sap-icon://sorting-ranking" press="onSelSort"></Button>
+     <SearchField width="20%" liveChange="change"></SearchField>
+    <Button icon="sap-icon://add" press="onAddProductPress"/>
+    <Button icon="sap-icon://edit" press="onEditProductPress"/>
+     </content>
+     </Toolbar>
+     </headerToolbar>
+     <columns>
+    <Column width="10rem">
+        <Text text="Product Id"/>
+     </Column>
+     <Column>
+        <Text text="Product Name"/>
+     </Column>
+     <Column>
+        <Text text="Product Description"/>
+     </Column>
+     <Column>
+        <Text text="Location"/>
+     </Column>
+     <Column>
+        <Text text="Cost Center"/>
+     </Column>
+     <Column>
+        <Text text="Status"/>
+     </Column>
+     <Column>
+        <Text text="Action"/>
+     </Column>
+    </columns>
+    <items>
+        <ColumnListItem type="Navigation" press="ondetails">
+        <cells>
+        <Text text="{ProductId}"/>
+        <Text text="{ProductName}"/>
+        <Text text="{ProductDescription}"/>
+        <Text text="{Location}"/>
+        <Text text="{CostCenter}"/>
+        <ObjectStatus text="{Status}" state="{=${Status} === 'Active' ? 'Success' : 'Error'}"/>
+        <Button icon="sap-icon://delete" press="onDeleteProductPress"></Button>
+        </cells>
+        </ColumnListItem>
+    </items>
+    </Table>
+    <Button text="Navigate to List" press="onNavPress"></Button>
+    </Page>
+</mvc:View>

@@ -1,0 +1,25 @@
+<mvc:View controllerName="assesment.controller.list"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page1" title="{i18n>title}" showNavButton="true" navButtonPress="onNavPress">
+     <List headerText="List page" id="LID1" items="{vendorview>/}" >
+     <headerToolbar>
+     <Toolbar >
+     <content>
+     <Title text ="List"></Title>
+     <ToolbarSpacer ></ToolbarSpacer>
+      <Button icon="sap-icon://create" text="Create" press="OnCreatelist"></Button>
+     <Button icon="sap-icon://sort" press="OnSortlist"></Button>
+     <SearchField width="20rem" change="Onpressfil"></SearchField>
+     </content>
+     </Toolbar>
+     </headerToolbar>
+     <items>
+    <StandardListItem  
+    title="{vendorview>vendorId}"
+    description="{vendorview>vendorName}"
+    />
+    </items>
+    </List>
+       </Page>
+</mvc:View>

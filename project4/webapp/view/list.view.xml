@@ -1,0 +1,29 @@
+<mvc:View controllerName="project4.controller.List"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page1" title="{i18n>title}" showNavButton="true" navButtonPress="onNavList">
+    <List id="Listid"
+    headerText="LIST ITEMS"
+    items="{/Products}" mode="SingleSelectLeft">
+    <headerToolbar>
+    <Toolbar>
+    <content>
+    <Title text="List Search" ></Title>
+    <ToolbarSpacer ></ToolbarSpacer>
+    <Button icon="sap-icon://write-new" text="Create" press="Create"/>
+    <Button icon="sap-icon://sorting-ranking" text="Sort" press="onSelSort"></Button>
+     <Button icon="sap-icon://show-edit" text="Edit" press="onEdit"/>
+  <Button icon="sap-icon://delete" text="Delete" press="onDelete"/>
+    <SearchField width="20%" liveChange="onSearch"></SearchField>
+    </content>
+    </Toolbar>
+    </headerToolbar>
+    <items>
+    <StandardListItem 
+    title="{ProductName}"
+description="{ProductDescription}"
+icon="{ProductUrl}"/> 
+   	</items>
+    </List>
+       </Page>
+</mvc:View>
