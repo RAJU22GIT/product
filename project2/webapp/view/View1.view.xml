@@ -11,6 +11,7 @@
             <Title text="List Table"/>
             <ToolbarSpacer/>
             <SearchField width="25%" liveChange="onSearchList"/>
+            <Button text="Raj"></Button>
             </content>
          </Toolbar>
       </headerToolbar>
