@@ -1,0 +1,24 @@
+<mvc:View controllerName="com.royalenfield.login.royalenfield.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page title="Royal Enfield" class="sapUiContentPadding">
+    <content>
+      <HBox justifyContent="SpaceBetween" alignItems="Center">
+    
+        <VBox>
+          <Image src="model/enfield_logo.png.jpg" width="700px"/>
+        </VBox>
+
+        <VBox width="400px" alignItems="Center" class="formBox">
+          <Text text="Welcome Back" class="titleText"/>
+          <Input id="username" placeholder="Enter Username"/>
+          <Input id="password" type="Password" placeholder="Enter Password"/>
+          <CheckBox text="Show Password" select="onShowPassword"/>
+          <Button text="Log In" press="onLoginPress" type="Emphasized"/>
+          <Link text="Forgot Password?" press="onForgotPassword"/>
+        </VBox>
+
+      </HBox>
+    </content>
+  </Page>
+</mvc:View>
