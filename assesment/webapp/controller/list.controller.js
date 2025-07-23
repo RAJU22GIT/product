@@ -72,19 +72,19 @@ sap.ui.define([
             var oMaterialModel = this.getView().getModel("material");
             var aMaterials = oMaterialModel.getProperty("/");
 
-            // Step 2: Find the correct material object
+           
             var materialObj = aMaterials.find(mat => mat.materialId === this.matid);
 
-            // Step 3: Push vendor to vendors array
+          
             if (materialObj) {
                 var aVendors = materialObj.vendors || [];
                 aVendors.push(this.getView().getModel("listtwo").getData());
                 materialObj.vendors = aVendors;
 
-                // Step 4: Set updated array back into model
+               
                 oMaterialModel.setProperty("/", aMaterials);
 
-                // Step 5: Force model to update bindings
+            
                 oMaterialModel.updateBindings(true);
             }
 
