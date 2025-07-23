@@ -506,57 +506,163 @@
       }
     },
     {
-        "name": "Start enfieldpage",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/enfieldpage",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--open",
-            "test/flp.html#app-preview"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "DEBUG": "--inspect",
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/enfieldpage\"}"
-        }
+      "name": "Start enfieldpage",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/enfieldpage",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/enfieldpage\"}"
+      }
     },
     {
-        "name": "Start enfieldpage Local",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/enfieldpage",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--config",
-            "./ui5-local.yaml",
-            "--open",
-            "test/flp.html#app-preview"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/enfieldpage\"}"
-        }
+      "name": "Start enfieldpage Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/enfieldpage",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/enfieldpage\"}"
+      }
+    },
+    {
+      "name": "Start enfieldpage",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/enfieldpage",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/enfieldpage\"}"
+      }
+    },
+    {
+      "name": "Start enfieldpage Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/enfieldpage",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/enfieldpage\"}"
+      }
+    },
+    {
+      "name": "Start projrctre",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/projrctre",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/projrctre\"}"
+      }
+    },
+    {
+      "name": "Start projrctre Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/projrctre",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/projrctre\"}"
+      }
     }
   ]
 }
